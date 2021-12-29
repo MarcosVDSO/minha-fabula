@@ -1,6 +1,127 @@
 <fable>
-	<page>
-  
+	<page background="18.png" soundtrack="golem_deploy_01.wav" >
+    <agent img="1.png" x="-10" y="0" width="150" height="150" />
+    <agent img="2.png" x="140" y="0" width="150" height="150" />
+    <agent img="2.png" x="290" y="0" width="150" height="150" />
+    <agent img="3.png" x="440" y="0" width="150" height="150" />
+    <agent img="clash-royale-png-46134.png" x="380" y="150" width="70" height="90" />
+    <agent img="skin-torre-do-rei-construcao-colossal-clash-royale-15-temporada-300x242.png" x="-30" y="135" width="170" height="150" />
+    <agent img="golem2.png.png" x="230" y="140" width="110" height="90" />
+    <agent img="bruxa-sombria.png" x="120" y="140" width="110" height="90" />
+    <agent img="nuvem 3.png" x="300" y="350" width="200" height="100" />
+    <agent img="nuvem 3.png" x="0" y="320" width="200" height="100" />
+    <agent 
+      text="Ah, não! A torre do seu rei está sendo atacada." 
+      x="20" y="450" width="300" on-touch="story2"> 
+    	<story2 text="Ajude-o a recrutar tropas para combater o Golem e a Bruxa sombria antes que seja tarde." />
+    </agent>
+    <agent img="Sign_2.png" x="450" y="150" width="50" height="50" on-touch="_NEXT_PAGE" />
+	
+  </page>
+  <page background="vermelho2.jpg" soundtrack="musica-arena.mp3">
+    <agent img="pedra.png" x="92" y="140" width="30" height="30" draggable="True" on-drop="ponte-surgir" on-zone="desaparecer" on-trigger="desaparecer">
+      <desaparecer x="-1000" />
+    </agent>
+    
+    <agent img="Tile (10).png" x="170" y="450" width="50" height="50" />
+    <agent img="Tile (10).png" x="170" y="400" width="50" height="50" />
+    <agent img="alavanca.png" x="132" y="400" width="50" height="50" drop-zone="ponte-surgir">
+                                                                                                         <ponte-surgir img="ponte.png" x="135" y="120" width="160" height="140" />
+                                                                                          
+                                                                                    
+                                                                                                    </agent>
+    <agent img="5.png" x="-10" y="0" width="150" height="150" />
+    <agent img="riolava.jpg" x="140" y="0" width="150" height="100" />
+    <agent img="5.png" x="290" y="0" width="150" height="150" />
+    <agent img="5.png" x="440" y="0" width="150" height="150" />
+    <agent img="pekka2.png" x="340" y="140" width="180" height="150" />
+    <agent img="Skeleton.png" x="0" y="150" width="35" height="15" />
+    <agent img="rei 2.png" x="10" y="145" width="80" height="100" />
+    <agent img="Skeleton.png" x="300" y="150" width="35" height="15" />
+    
+    
+    <agent img="Sign_2.png" x="450" y="150" width="50" height="50" on-touch="_NEXT_PAGE" />
+    <agent 
+      text="A primeira tropa que deverá ser recrutada é a grande e magestosa P.E.K.K.A." 
+      x="20" y="440" width="300" color="white" on-touch="story2"> 
+    	<story2 text="Infelizmente há um mar de lava que separa o rei dela" on-touch="story3"/>
+        <story3 text="Para que a P.E.K.K.A consiga atravessar, é necessária uma ponte." on-touch="story4" />
+          <story4 text="Para que ela apareça é preciso acionar a alavanca.Porém, o rei não a alcança. Por isso, tente arremeçar um objeto." on-touch="story5"/>
+           <story5 text="Com a ponte é possível que a P.E.K.K.A atravesse e ajude o rei."/>
+    
+    
+    </agent>
+   
     
   </page>
+  <page background="verde.jpg">
+    
+    <agent img="Bush (1).png" x="220" y="150" width="80" height="60" />
+    <agent img="Bush (1).png" x="-20" y="150" width="80" height="60" />
+    <agent img="1.png" x="-10" y="0" width="150" height="150" />
+    <agent img="2.png" x="140" y="0" width="150" height="150" />
+    <agent img="2.png" x="290" y="0" width="150" height="150" />
+    <agent img="3.png" x="440" y="0" width="150" height="150" />
+    <agent img="rei 2.png" x="100" y="140" width="80" height="100" />
+    
+    
+    <agent img="casulo.png" x="370" y="145" width="120" height="160" drop-zone="mago-surgir">
+      <mago-surgir img="mago.png" x="300" y="140" width="90" height="100" />
+    
+    </agent>
+    <agent img="Tree.png" x="200" y="150" width="100" height="100" />
+    <agent img="Tree.png" x="-70" y="150" width="110" height="120" />
+    
+    
+    <agent img="portion.png" x="30" y="140" width="30" height="30" draggable="True" on-drop="mago-surgir" on-zone="desaparecer2" on-trigger="desaparecer2">
+      <desaparecer2 x="-100000" />
+    
+    </agent>
+      <agent img="pedra.png" x="30" y="140" width="35" height="35" draggable="True" />
+    <agent img="Sign_2.png" x="450" y="150" width="50" height="50" on-touch="_NEXT_PAGE" />
+    
+    <agent 
+      text="O próximo a ser recrutado, será o grande poderoso Mago." 
+      x="20" y="440" width="300" on-touch="story2"> 
+    	<story2 text="Ele está meditando em seu grande casulo de fogo." on-touch="story3"/>
+        <story3 text="Para fazê-lo sair, você deverá ajudar o rei a encontrar a porção mágica secreta escondida no cenário." on-touch="story4" />
+          <story4 text="Com a porção em mãos, derrame-a sobre o casulo. Dessa forma, o Mago acordará e estará a disposição do rei." />
+           
+    
+    
+    </agent>
+    
+  </page>
+  
+    
+  
+  
+  <page background="18.png" >
+    <agent img="1.png" x="-10" y="0" width="150" height="150" />
+    <agent img="2.png" x="140" y="0" width="150" height="150" />
+    <agent img="2.png" x="290" y="0" width="150" height="150" />
+    <agent img="3.png" x="440" y="0" width="150" height="150" />
+    
+    
+    <agent img="golem2.png.png" x="120" y="140" width="110" height="90" />
+    <agent img="bruxa-sombria.png" x="10" y="140" width="110" height="90" />
+    <agent img="nuvem 3.png" x="300" y="350" width="200" height="100" />
+    <agent img="nuvem 3.png" x="0" y="320" width="200" height="100" />
+    <agent img="pekka2.png" x="200" y="140" width="180" height="150" />
+    <agent img="mago.png" x="360" y="140" width="90" height="100" />
+    
+    <agent img="rei chorando.png" x="0" y="250" width="80" height="60" />
+    <agent img="rei mito.png" x="400" y="250" width="130" height="90" />
+    
+    
+    <agent 
+      text="Com o poderoso hit da P.E.K.K.A., o Golem foi destruído, e com o grande dano em área do mago a temida bruxa sombria e seus morcegos foram derrotados." 
+      x="20" y="420" width="300" on-touch="story2"> 
+    	<story2 text="Dessa forma, a torre continuou intacta e o rei ficou extremamente feliz." />
+        
+    
+    </agent>
+	
+  </page>
+  
 </fable>
