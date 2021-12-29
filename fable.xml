@@ -1,5 +1,5 @@
 <fable>
-	<page background="18.png" soundtrack="golem_deploy_01.wav" >
+	<page background="18.png" soundtrack="musica-arena.mp3" >
     <agent img="1.png" x="-10" y="0" width="150" height="150" />
     <agent img="2.png" x="140" y="0" width="150" height="150" />
     <agent img="2.png" x="290" y="0" width="150" height="150" />
@@ -54,7 +54,7 @@
    
     
   </page>
-  <page background="verde.jpg">
+  <page background="verde.jpg" soundtrack="musica-arena.mp3">
     
     <agent img="Bush (1).png" x="220" y="150" width="80" height="60" />
     <agent img="Bush (1).png" x="-20" y="150" width="80" height="60" />
@@ -96,7 +96,7 @@
     
   
   
-  <page background="18.png" >
+  <page background="18.png" soundtrack="morte subita.mp3">
     <agent img="1.png" x="-10" y="0" width="150" height="150" />
     <agent img="2.png" x="140" y="0" width="150" height="150" />
     <agent img="2.png" x="290" y="0" width="150" height="150" />
